@@ -19,7 +19,7 @@ class RoomController extends Controller
         $price=$request->price;
         $number=$request->number;
         $area=$request->area;
-        $image=$request->image;
+        $image = $request->file("image")->store('public');
         $typeroom=$request->typeroom;
         $request->validate([
         	'name'=>'required|unique:rooms',

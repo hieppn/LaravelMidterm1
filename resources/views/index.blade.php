@@ -29,7 +29,7 @@
 	<div class="grid-container">
 @foreach($rooms as $room)
 			<div class= "grid-item">
-				<img src="img/{{$room->image}}"class="card-img-top" width="150px" height="130px" >
+				<td><img src="{{'storage/'.$room->image}}"class="card-img-top" width="150px" height="130px" ></td>
 			<div class="card" style="width: 350px;">
 			<div class="card-body">
 		

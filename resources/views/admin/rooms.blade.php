@@ -24,7 +24,7 @@
                             <td>{{$room->number}}</td>
                             <td>{{$room->getDisplayArea()}}</td>
                             <td>{{$room->getDisplayPrice()}}</td>
-                            <td><img src="img/{{$room->image}}" width="50px;"height="50px;"></td>
+                            <td><img src="{{'/storage/'.$room->image}}" width="50px;"height="50px;"></td>
                     @endforeach
                     
             </table>

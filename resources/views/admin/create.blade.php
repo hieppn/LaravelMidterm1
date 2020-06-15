@@ -15,7 +15,7 @@
         </ul>
     </div>
 @endif
-    <form action="/rooms" method="post">
+    <form action="/rooms" method="post" enctype="multipart/form-data">
     @csrf
     <label>Name</label><br>
     <input type="text"  required name="name"><br>
