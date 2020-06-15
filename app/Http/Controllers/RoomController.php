@@ -11,10 +11,6 @@ class RoomController extends Controller
             $rooms=Room::all();
             return view('/admin/rooms',['rooms'=>$rooms]);
         }
-        function home(){
-            $rooms=Room::all();
-            return view('index',['rooms'=>$rooms]);
-        }
         function create(){
         	return view('admin/create');
         }
@@ -40,4 +36,8 @@ class RoomController extends Controller
         $room->save();
         return redirect("/rooms");
     }
+    function home(){
+            $rooms=Room::all();
+            return view('index',['rooms'=>$rooms]);
+        }
 }

@@ -8,7 +8,7 @@
 <body>
      @if ($errors->any())
     <div class="hidden">
-        <ul class="hidden">
+        <ul style="display: none">
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
             @endforeach
@@ -17,26 +17,26 @@
 @endif
     <form action="/rooms" method="post">
     @csrf
-    <label>Name</label>
+    <label>Name</label><br>
     <input type="text"  required name="name"><br>
     @error('name')
     <div>{{ $message }}</div>
     @enderror </p>
-    <label>Type Room</label>
+    <label>Type Room</label><br>
     <input type="text"required name="typeroom"><br>
-    <label>Price</label>
+    <label>Price</label><br>
     @error('price')
     <div>{{ $message }}</div>
     @enderror </p>
     <input type="number"required name="price"><br>
-    <label>Number</label>
+    <label>Number</label><br>
     <input type="text"required name="number"><br>
-    <label>Area</label>
+    <label>Area</label><br>
     @error('area')
     <div>{{ $message }}</div>
     @enderror </p>
     <input type="number"required name="area"><br>
-    <label>Image</label>
+    <label>Image</label><br>
     <input type="file" name="image"><br>
     <button class="btn"type="submit">
     Submit

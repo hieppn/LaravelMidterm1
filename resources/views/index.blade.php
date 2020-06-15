@@ -35,29 +35,29 @@
 		
 				<h5 class="card-title" style="text-transform: uppercase;">{{$room->name}}</h5>
 				<hr>
-				<th colspan="2" >
-				<td style="color:#808080">Price:</td>
-				<b>{{$room->getDisplayPrice()}}</b>
-				</th><br>
-				<hr>
 				<th colspan="2">
-				<td>Number:</td>
-				<span style="margin-right: 0px">{{$room->number}}</td>
-				</th><br>
-				<hr>
-				<th colspan="2">
-				<td>Area:</td>
-				<td >{{$room->getDisplayArea()}}</td>
-				</th><br>
-				<hr>
-				<th colspan="2">
-				<td>Typeroom:</td>
+				<td>Phòng:</td>
 				<td >{{$room->typeroom}}</td>
 				</th>
 				<hr>
 				<th colspan="2">
-				<td>view</td>
-				<span style="margin-left: 100px; color: #ff4000">Book</span>
+				<td>Chỗ nghỉ:</td>
+				<span style="margin-right: 0px">{{$room->number}}</td>
+				</th><br>
+				<hr>
+				<th colspan="2">
+				<td>Kích thước:</td>
+				<td >{{$room->getDisplayArea()}}</td>
+				</th><br>
+				<hr>
+				<th colspan="2" >
+				<td style="color:#808080">Giá phòng:</td>
+				<b>{{$room->getDisplayPrice()}}</b>
+				</th><br>
+				<hr>
+				<th colspan="2">
+				<td>Xem </td>
+				<span style="margin-left: 100px; color: #ff4000">Đặt phòng</span>
 				</th>
 			</div>
 </div>
