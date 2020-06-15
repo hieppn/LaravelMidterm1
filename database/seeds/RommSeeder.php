@@ -16,9 +16,9 @@ class RommSeeder extends Seeder
         DB::table('rooms')->insert([
         	'name'=> $faker->name,
             'typeroom'=>$faker->name,
-            'image' => '/img/abc.jpg',
+            'image' => 'abc.jpg',
             'number'=>$faker->name,
-            'area'=> $faker->name,
+            'area'=> 45,
             'price'=>100000,
             ]);
         }

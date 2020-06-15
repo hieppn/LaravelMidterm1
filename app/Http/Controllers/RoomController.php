@@ -26,7 +26,8 @@ class RoomController extends Controller
         $image=$request->image;
         $typeroom=$request->typeroom;
         $request->validate([
-            'price'=>'min:1',
+        	'name'=>'required|unique:rooms',
+            'area'=>'min:2',
          ]);
         $room= new Room;
     

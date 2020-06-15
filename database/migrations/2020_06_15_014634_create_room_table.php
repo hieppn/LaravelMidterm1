@@ -19,7 +19,7 @@ class CreateRoomTable extends Migration
             $table->string('image');
             $table->string('typeroom');
             $table->string('number');
-            $table->string('area');
+            $table->integer('area');
             $table->integer('price');
             $table->timestamps();
         });

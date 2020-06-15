@@ -7,8 +7,8 @@
 </head>
 <body>
      @if ($errors->any())
-    <div>
-        <ul>
+    <div class="hidden">
+        <ul class="hidden">
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
             @endforeach
@@ -25,14 +25,17 @@
     <label>Type Room</label>
     <input type="text"required name="typeroom"><br>
     <label>Price</label>
-    <input type="number"required name="price"><br>
-    @error('typeroom')
+    @error('price')
     <div>{{ $message }}</div>
     @enderror </p>
+    <input type="number"required name="price"><br>
     <label>Number</label>
     <input type="text"required name="number"><br>
     <label>Area</label>
-    <input type="text"required name="area"><br>
+    @error('area')
+    <div>{{ $message }}</div>
+    @enderror </p>
+    <input type="number"required name="area"><br>
     <label>Image</label>
     <input type="file" name="image"><br>
     <button class="btn"type="submit">
